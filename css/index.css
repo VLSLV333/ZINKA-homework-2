@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+header .logo{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 29px;
+}
+
+header .head-line{
+    padding: 21px 0px 21px 0px;
+}
+
+header .menu a{
+    font-family: 'Khula', sans-serif;
+}
+
+h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+}
+
+h2{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+h4{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+h5{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+main .large-consumer p{
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main #about-us p{
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main .testimonial p{
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main .new-articles p{
+    font-family: 'Khula', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+main .our-contact p{
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main #large-text {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.big-btn{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.small-btn{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
