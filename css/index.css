@@ -1,29 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --main-color: white;
+    --yellow: rgb(241, 198, 57);
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+body{ 
+    max-width: 1200px;
+    margin: auto;
+}
+
 header .logo{
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 900;
     font-size: 29px;
+    padding: 0 0 0 30px;
+    color: var(--main-color);
 }
 
 header .head-line{
     padding: 21px 0px 21px 0px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+}
+header .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex:1;
+    max-width: 800px;
 }
 
 header .menu a{
     font-family: 'Khula', sans-serif;
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 3px;
+}
+
+header .menu a:hover {
+    color: var(--yellow);
+}
+
+header .banner{
+    background-image: url(../img/main-photo.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 900;
     font-size: 80px;
+    color: var(--main-color);
 }
 
 h2{
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 900;
     font-size: 40px;
+    margin: 0;
 }
 
 h4{
@@ -50,34 +98,418 @@ a{
     font-size: 15px;
 }
 
+main .choose-us{
+    background-color: #161616;
+    color: var(--main-color);
+    padding: 0 0 50px 0;
+}
+
+main #services{
+    background-color: #161616;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0 30px 0;
+}
+
+main .choose-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 0 50px 0;
+}
+
+main .choose1{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+main .choose2{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+main .choose3{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+main .choose-us img{
+    max-width: 75px;
+    max-height: 75px;
+}
+
+main p{
+    margin: 0;
+    padding: 0;
+}
+
+main .become-cons{
+    background-color: var(--yellow);
+    padding: 60px 0 90px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .electricityATOM{
+    background-image: url(../img/backATOM-black.png);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 80px 0;
+}
+
+main .electricityATOM img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+main .electricityATOM h2{
+    margin: 0 0 30px 0;
+}
+
+main .large-consumer h2{
+    display: flex;
+    color: var(--main-color);
+    background-color: rgb(40, 40, 40);
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 50px 0;
+}
+
+main .big-consumers{
+    padding: 5px;
+    background-color: rgb(40, 40, 40);
+}
+
+main .all-consumers{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    color: var(--main-color);
+}
+
+main .all-consumers p{
+    color: rgb(172, 172, 172);
+    margin: 20px 0 30px 0;
+}
+
+main .all-consumers h4{
+    margin: 20px 0 10px 0;
+}
+
+main .all-consumers a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+main .al-cons-button{
+    background-color: rgb(40, 40, 40);
+    padding: 50px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 670px){
+    main .all-consumers{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 810px){
+    main .all-consumers{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px){
+    main .all-consumers{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 main .large-consumer p{
     font-family: 'Khula', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
 
+main #about-us{
+    background-image: url(../img/Anton-back.png);
+    padding: 80px 20px 80px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main #about-us img{
+    max-height: 400px;
+}
+
+main .about-right{
+    max-width: 500px;
+    padding: 0 0 0 20px;
+}
+
 main #about-us p{
     font-family: 'Khula', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: var(--main-color);
+    padding: 40px 0px;
+}
+
+main #about-us h2{
+    color: var(--main-color);
+}
+
+main .testimonial{
+    background-image: url(../img/testimonials-back.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 90px 0;
+}
+
+main .testimonial-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin: 0px 30px;
+}
+
+main .testimonial h2{
+    color: var(--main-color);
+    display:flex;
+    justify-content: center;
+    padding: 80px 0 60px 0;
+}
+
+main .testimonial img{
+    max-height: 300px;
+}
+
+main .testimonial a{
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 main .testimonial p{
     font-family: 'Khula', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: rgb(172, 172, 172);
+    padding: 0 0 40px 0;
 }
 
-main .new-articles p{
-    font-family: 'Khula', sans-serif;
+main .testimonial h4{
+    color: var(--main-color);
+}
+
+main .change-supplier{
+    background-image: url(../img/change-supplier.png);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .change-supplier h2{
+    max-width: 550px;
+    margin: 0 0 100px 100px;
+}
+
+main .all-lisenses{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0 150px 0;
+}
+
+main .grid-lisenses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 0 0 0;
+    grid-gap: 50px;
+}
+
+@media (min-width: 320px){
+    main .grid-lisenses{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 500px){
+    main .grid-lisenses{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 750px){
+    main .grid-lisenses{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 950px){
+    main .grid-lisenses{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+main .all-lisenses h2{
+    color: var(--main-color);
+}
+
+main .all-lisenses img{
+    max-width: 200px;
+}
+
+main .new-articles{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 90px 0;
+}
+
+main .grey-news{
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 550px;
+    padding: 40px 10px;
+}
+main .grid-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px 0 60px 0;
+    grid-gap: 25px;
+}
+
+@media (min-width: 320px){
+    main .grid-news{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 650px){
+    main .grid-news{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+main .news-top{
+    display: flex;
+}
+
+main .grey-p{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(172, 172, 172);
+}
+
+main .white-p{
+    font-family: 'Saira Condensed', sans-serif;
     font-weight: 900;
     font-size: 26px;
+    color: var(--main-color);
+}
+
+main .new-articles h2{
+    color: var(--main-color);
+}
+
+main .new-articles img{
+    max-height: 20px;
+}
+
+main p.yellow-text{
+    color: var(--yellow);
+    padding: 0 0 20px 0;
+}
+
+main .our-contact{
+    background-color: rgb(42, 41, 37);
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 80px 0;
+}
+
+main .contacts-center{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+main .contacts-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main .contacts-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .contacts-second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .contacts-third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .our-contact img{
+    max-width: 330px;
+    margin: 0 0 20px 0;
+}
+
+main .our-contact h2{
+    color: var(--main-color);
+}
+
+main .our-contact h5{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 26px;
+    margin: 50px 0 10px 0;
 }
 
 main .our-contact p{
     font-family: 'Khula', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: var(--main-color);
 }
 
 main #large-text {
@@ -85,6 +517,60 @@ main #large-text {
     font-weight: 900;
     font-size: 36px;
 }
+
+/* Controls */
+
+.button {
+    border: none;
+    padding: 0.8em 1.55em;
+    margin: 0 0.3em 0.3em 0;
+    color: black;
+    text-align: center;
+    transition: background-color 0.4s;
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button2{
+    border: none;
+    padding: 1em 1.85em;
+    margin: 0 0.3em 0.3em 0;
+    color: var(--yellow);
+    text-align: center;
+    transition: color 0.4s;
+    background-color: black;
+    cursor: pointer;
+}
+
+.button2:hover {
+    color: white;
+    background-color: #3b3a3a;
+    cursor: pointer;
+}
+
+.button3{
+    border: none;
+    padding: 0.8em 1.9em;
+    margin: 0 0.3em 0.3em 0;
+    color: black;
+    text-align: center;
+    transition: background-color 0.4s;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.button3:hover {
+    color: black;
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
 
 .big-btn{
     font-size: 17px;
