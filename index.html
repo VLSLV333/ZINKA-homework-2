@@ -31,6 +31,44 @@
         </div>
     </header>
     <main>
+        <div class = "keys">
+            <div data-key = "65" class = "key">
+                <kbd>A</kbd>
+                <span class = "sound">clap</span>
+            </div>
+            <div data-key = "83" class = "key">
+                <kbd>S</kbd>
+                <span class = "sound">hihat</span>
+            </div>
+            <div data-key = "68" class = "key">
+                <kbd>D</kbd>
+                <span class = "sound">kick</span>
+            </div>
+            <div data-key = "70" class = "key">
+                <kbd>F</kbd>
+                <span class = "sound">openhat</span>
+            </div>
+            <div data-key = "71" class = "key">
+                <kbd>G</kbd>
+                <span class = "sound">boom</span>
+            </div>
+            <div data-key = "72" class = "key">
+                <kbd>H</kbd>
+                <span class = "sound">ride</span>
+            </div>
+            <div data-key = "74" class = "key">
+                <kbd>J</kbd>
+                <span class = "sound">snare</span>
+            </div>
+            <div data-key = "75" class = "key">
+                <kbd>K</kbd>
+                <span class = "sound">tom</span>
+            </div>
+            <div data-key = "76" class = "key">
+                <kbd>L</kbd>
+                <span class = "sound">tink</span>
+            </div>
+        </div>
             <div class="choose-us">
                  <h2 id="services">
                      Choose us
@@ -244,6 +282,7 @@
                  </div>
             </div>
         </div>
+
     </main>
     <footer>
         <h2>Apply for more details</h2>
@@ -264,5 +303,38 @@
             <input type="submit" value="submit form">
         </form>
     </footer>
+
+    <audio data-key = "65" src="/audio/Clap.wav"></audio>
+    <audio data-key = "83" src="/audio/Hihat.wav"></audio>
+    <audio data-key = "68" src="/audio/Kick.wav"></audio>
+    <audio data-key = "70" src="/audio/Openhat.wav"></audio>
+    <audio data-key = "71" src="/audio/Boom.wav"></audio>
+    <audio data-key = "72" src="/audio/Ride.wav"></audio>
+    <audio data-key = "74" src="/audio/Snare.wav"></audio>
+    <audio data-key = "75" src="/audio/Tom.wav"></audio>
+    <audio data-key = "76" src="/audio/Tink.mp3"></audio>
+    
+    <script>
+        
+        window.addEventListener("keydown", playSound);
+        function playSound(e) {
+            const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+            const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+            if (!audio) return; // will stop our function from runing;
+            audio.currentTime = 0; // rewind to the start of the audio running;
+            audio.play();
+            key.classList.add("playing");
+            // key.classList.remove("playing"); // removes class from Node
+            // key.classList.toggle("playing");  // adds or removes class on click or press
+        };
+         
+        const keys = document.querySelectorAll(".key");
+        keys.forEach(key => key.addEventListener("transitionend", removeTransform));
+        function removeTransform (e){
+            if (e.propertyName !== "transform") return; // will skip it if it's not Transform;
+            this.classList.remove("playing");
+        }
+
+    </script>
 </body>
 </html>
